@@ -19,8 +19,12 @@ class _DetailsPageState extends State<DetailsPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Obx(() =>
-                Text(controller.count.string, style: TextStyle(fontSize: 30))),
+            Obx(
+              () => Text(
+                controller.count.string,
+                style: const TextStyle(fontSize: 30),
+              ),
+            ),
             SizedBox(
               height: 40,
             ),
